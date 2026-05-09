@@ -1,0 +1,88 @@
+.struk-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.struk-receipt {
+  width: 300px;
+  background: white;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.struk-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.struk-header p {
+  font-size: 11px;
+  margin: 0;
+  color: #666;
+}
+
+.struk-divider {
+  border-top: 1px dashed #000;
+  margin: 10px 0;
+}
+
+.struk-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 11px;
+  text-align: left;
+}
+
+.struk-row span {
+  flex: 1;
+}
+
+.struk-row strong {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.struk-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.struk-footer {
+  margin-top: 16px;
+  font-size: 11px;
+  color: #666;
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: 58mm 120mm;
+  }
+
+  body * { visibility: hidden; }
+  #receipt-content, #receipt-content * { visibility: visible; }
+  #receipt-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58mm;
+    margin: 0;
+    padding: 5px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .page-header, .sidebar, .topbar, .btn { display: none !important; }
+}

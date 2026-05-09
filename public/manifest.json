@@ -1,0 +1,22 @@
+{
+    "name": "Sans Speed Portal Pelanggan",
+    "short_name": "Sans Speed App",
+    "description": "Portal billing dan informasi pelanggan Sans Speed",
+    "start_url": "./login.html",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#3b82f6",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
